@@ -32,19 +32,17 @@ const DynamicTable = () => {
       "New Market Product Strategy",
       "Cybersecurity Breach Response",
       "EV Market Estimation",
-      "Competitor Differentiation",
-      "Cash Runway Extension",
     ];
 
     const rows = data.map((team) => [
-      user.name, // Updated from fullName
-      user.phone, // Updated from phoneNumber
-      user.email,
-      user.question1, // Updated from pandemicResponse
-      user.question2, // Updated from conflictingAdviceDecision
-      user.question3, // Updated from newMarketStrategy
-      user.question4, // Updated from cybersecurityResponse
-      user.question5,
+      team.name, // Updated from fullName
+      team.phone, // Updated from phoneNumber
+      team.email,
+      team.question1, // Updated from pandemicResponse
+      team.question2, // Updated from conflictingAdviceDecision
+      team.question3, // Updated from newMarketStrategy
+      team.question4, // Updated from cybersecurityResponse
+      team.question5,
     ]);
 
     const csvContent = [
@@ -143,40 +141,28 @@ const DynamicTable = () => {
             teamData.map((team, index) => (
               <tr key={index}>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.fullName}
+                  {team.name}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.phoneNumber}
+                  {team.phone}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
                   {team.email}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.collegeName}
+                  {team.question1}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.collegeYear}
+                  {team.question2}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.pandemicResponse}
+                  {team.question3}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.conflictingAdviceDecision}
+                  {team.question4}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.newMarketStrategy}
-                </td>
-                <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.cybersecurityResponse}
-                </td>
-                <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.evMarketEstimation}
-                </td>
-                <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.competitorDifferentiation}
-                </td>
-                <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {team.cashRunwayExtension}
+                  {team.question5}
                 </td>
               </tr>
             ))
