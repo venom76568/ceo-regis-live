@@ -37,18 +37,14 @@ const DynamicTable = () => {
     ];
 
     const rows = data.map((team) => [
-      team.fullName,
-      team.phoneNumber,
-      team.email,
-      team.collegeName,
-      team.collegeYear,
-      team.pandemicResponse,
-      team.conflictingAdviceDecision,
-      team.newMarketStrategy,
-      team.cybersecurityResponse,
-      team.evMarketEstimation,
-      team.competitorDifferentiation,
-      team.cashRunwayExtension,
+      user.name, // Updated from fullName
+      user.phone, // Updated from phoneNumber
+      user.email,
+      user.question1, // Updated from pandemicResponse
+      user.question2, // Updated from conflictingAdviceDecision
+      user.question3, // Updated from newMarketStrategy
+      user.question4, // Updated from cybersecurityResponse
+      user.question5,
     ]);
 
     const csvContent = [
